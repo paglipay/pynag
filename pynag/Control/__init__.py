@@ -56,7 +56,7 @@ class daemon(object):
 
     def __init__(self,
                  nagios_bin="/usr/bin/nagios",
-                 nagios_cfg="/etc/nagios/nagios.cfg",
+                 nagios_cfg="/usr/local/nagios/etc/nagios.cfg",
                  nagios_init=None,
                  sudo=True,
                  shell=None,

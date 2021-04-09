@@ -8,7 +8,7 @@ sys.path.insert(1, '../')
 from pynag.Parsers import config
 
 ## Create the plugin option
-nc = config('/etc/nagios/nagios.cfg')
+nc = config('/usr/local/nagios/etc/nagios.cfg')
 nc.parse()
 #nc._post_parse()
 for host in nc['all_host']:

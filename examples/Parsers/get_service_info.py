@@ -14,7 +14,7 @@ from pynag.Parsers import config
 
 
 ## Create the plugin option
-nc = config('/etc/nagios/nagios.cfg')
+nc = config('/usr/local/nagios/etc/nagios.cfg')
 nc.parse()
 
 service = nc.get_service(sys.argv[1],sys.argv[2])

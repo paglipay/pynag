@@ -1530,8 +1530,8 @@ class Config(object):
 
         Examples::
 
-            _edit_static_file(filename='/etc/nagios/nagios.cfg', attribute='check_external_commands', new_value='1')
-            _edit_static_file(filename='/etc/nagios/nagios.cfg', attribute='cfg_dir', new_value='/etc/nagios/okconfig', append=True)
+            _edit_static_file(filename='/usr/local/nagios/etc/nagios.cfg', attribute='check_external_commands', new_value='1')
+            _edit_static_file(filename='/usr/local/nagios/etc/nagios.cfg', attribute='cfg_dir', new_value='/etc/nagios/okconfig', append=True)
         """
         if filename is None:
             filename = self.cfg_file
@@ -2008,11 +2008,11 @@ class Config(object):
 
         Example:
 
-            >>> c = Config(cfg_file="/etc/nagios/nagios.cfg")
+            >>> c = Config(cfg_file="/usr/local/nagios/etc/nagios.cfg")
             >>> c.abspath('nagios.cfg')
-            '/etc/nagios/nagios.cfg'
-            >>> c.abspath('/etc/nagios/nagios.cfg')
-            '/etc/nagios/nagios.cfg'
+            '/usr/local/nagios/etc/nagios.cfg'
+            >>> c.abspath('/usr/local/nagios/etc/nagios.cfg')
+            '/usr/local/nagios/etc/nagios.cfg'
 
         """
         if not isinstance(path, str):

@@ -62,7 +62,7 @@ from six.moves import map
 
 
 # Path To Nagios configuration file
-cfg_file = None  # '/etc/nagios/nagios.cfg'
+cfg_file = None  # '/usr/local/nagios/etc/nagios.cfg'
 
 # Were new objects are written by default
 pynag_directory = None

@@ -15,10 +15,10 @@ class MainConfigNotFound(Error):
 
 COMMON_CONFIG_FILE_LOCATIONS = [
     # nagios
-    '/etc/nagios/nagios.cfg',
+    '/usr/local/nagios/etc/nagios.cfg',
     '/etc/nagios3/nagios.cfg',
     '/usr/local/nagios/etc/nagios.cfg',
-    '/nagios/etc/nagios/nagios.cfg',
+    '/nagios/usr/local/nagios/etc/nagios.cfg',
     './nagios.cfg',
     './nagios/nagios.cfg',
 

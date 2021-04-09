@@ -8,7 +8,7 @@ from pynag import Model
 
 
 # If your nagios config is in an unusal place, uncomment this:
-# Model.cfg_file = '/etc/nagios/nagios.cfg'
+# Model.cfg_file = '/usr/local/nagios/etc/nagios.cfg'
 
 hostgroups = Model.Hostgroup.objects.all
 

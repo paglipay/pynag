@@ -15,7 +15,7 @@ service_description = sys.argv[1]
 target_host = sys.argv[2]
 
 ## Create the plugin option
-nc = config('/etc/nagios/nagios.cfg')
+nc = config('/usr/local/nagios/etc/nagios.cfg')
 #nc.parse()
 nc.parse()
 

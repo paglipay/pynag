@@ -16,7 +16,7 @@ def is_ip(ip_address):
         return False # There was an error, so it is invalid
 
 ## Create the plugin option
-nc = config('/etc/nagios/nagios.cfg')
+nc = config('/usr/local/nagios/etc/nagios.cfg')
 nc.parse()
 
 

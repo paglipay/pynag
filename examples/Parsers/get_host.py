@@ -14,7 +14,7 @@ from pynag.Parsers import config
 target_host = sys.argv[1]
 
 ## Create the plugin option
-nc = config('/etc/nagios/nagios.cfg')
+nc = config('/usr/local/nagios/etc/nagios.cfg')
 #nc.parse()
 nc.extended_parse()
 

@@ -30,7 +30,7 @@ class testControl(unittest.TestCase):
         warnings.simplefilter("ignore", FutureWarning)
 
         self.nagios_bin = self.config.guess_nagios_binary()
-        self.nagios_cfg = '/etc/nagios/nagios.cfg'
+        self.nagios_cfg = '/usr/local/nagios/etc/nagios.cfg'
         self.service_name = 'nagios'
         self.nagios_init = "service nagios"
 
